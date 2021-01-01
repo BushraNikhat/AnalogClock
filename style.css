@@ -1,0 +1,148 @@
+body{
+    background-color: rgb(219, 58, 0);
+}
+
+#heading{
+  text-align: center;
+  font-size:1.6rem;
+}
+
+#clock{
+    width: 37vw;
+    height:37vw;
+    margin:auto;
+    background: url(image/analog.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+/* ***** Decorating hour hand***** */
+#hour{
+    transform-origin: bottom;
+    position: absolute;
+    top:25.3%;
+    left:49.6%;
+    width: 1.6%;
+    height: 25%;
+    background-color:black;
+}
+/* ***** Decorating minute hand***** */
+ #min{
+    transform-origin: bottom;
+    position: absolute;
+    top:24.3%;
+    left:49.65%;
+    width: 1.2%;
+    height: 26%;
+    background-color:black;
+} 
+
+
+/* ***** Decorating second hand***** */
+ #sec{
+     transform-origin: bottom;
+    position: absolute;
+    top:23.1%;
+    left:49.73%;
+    width: .8%;
+    height: 27%;
+    background-color:red;
+} 
+
+
+/* ******* media query for medium devices ******** */
+@media (min-width:768px) and (max-width:991px){
+    #clock{
+        width: 42vw;
+        height:42vw;
+        margin:5rem auto;
+
+    }
+  
+}
+
+
+/* ******* media query for small devices ******** */
+
+ @media (min-width:576px) and (max-width:767px){
+  
+    #clock{
+        width: 50vw;
+        height:50vw;
+        margin:5rem auto;
+
+    }
+    /* #heading{
+        font-size: 1.4rem;
+    } */
+  
+} 
+
+
+/* ******* media query for extra small devices ******** */
+@media (min-width:457px) and (max-width:575px){
+  
+    #clock{
+        width: 60vw;
+        height:60vw;
+        margin:5rem auto;
+
+    }
+    #heading{
+        font-size: 1.4rem;
+    }
+  
+} 
+
+
+/* ******* media query for portrait mode devices ******** */
+@media (min-width:279px) and (max-width:456px){
+  
+        #clock{
+            width: 70vw;
+            height:70vw;
+            margin:5rem auto;
+
+        }
+        #heading{
+            font-size: 1.4rem;
+        }
+      
+    } 
+
+
+
+
+/* ******* media query for extra extra small devices ******** */
+ @media (max-width:278px){
+    #clock{
+        width: 75vw;
+        height:75vw;
+        margin:4rem auto;
+
+    }
+    #heading{
+        display: none;
+    }
+  
+}
+
+
+/* ******* media query for landscape mode ******** */
+
+@media (orientation:landscape) and (max-height:500px){
+    #clock{
+        width: 39vw;
+        height:39vw;
+        margin:0 auto;
+
+    }
+    #heading{
+        font-size: 1rem;
+    }
+  
+} 
+
+
+
+
